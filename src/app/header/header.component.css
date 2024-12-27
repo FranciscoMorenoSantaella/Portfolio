@@ -1,0 +1,43 @@
+.title-col {
+    padding: 40px;
+}
+
+.developer {
+    color: #ec8833;
+}
+
+
+.header-container {
+    background-color: #1B1E1D;
+}
+
+.my-name {
+    color: white;
+}
+
+p {
+    color: #afbaba;
+}
+
+button {
+    margin: 10px;
+}
+
+.header-container {
+    padding-top: 50px;
+}
+
+.btn-primary {
+    background-color: #363636 !important;
+    border: 0px;
+}
+
+img {
+    width: 48px;
+    margin: 5px;
+}
+
+a{
+    margin: 15px;
+    margin-top: 5px;
+}

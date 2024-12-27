@@ -1,0 +1,19 @@
+html, body, section{
+    background-color: #161618 !important;
+}
+
+h1{
+    color: white;
+}
+
+a{
+    color: #3a7dac !important;
+}
+
+router-outlet{
+    background-color: #161618 !important;
+}
+
+section{
+    scroll-margin: 60px !important;
+}

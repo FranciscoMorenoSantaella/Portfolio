@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+<section id="inicio">
+  <app-header></app-header>
+</section>
+<section id="experiencia">
+  <app-experience></app-experience>
+</section>
+<section id="proyectos">
+  <h2>Mis proyectos destacados</h2>
+  <div class="container">
+    <div class="col-12">
+      <app-proyect-card [category]="'FULLSTACK'" [title]="'FoodRecipes'"
+        [description]="'FoodRecipes es una aplicación en la que puedes ver recetas de comida, te permite ver las recetas por distintas categorías y realizar búsquedas por nombre.'"
+       [githuburl]="'https://github.com/FranciscoMorenoSantaella/FoodRecipesWeb'"
+        [tags]="['Angular', 'Spring Boot', 'MySQL']" [imageSrc]="'assets/recetas.png'">
+      </app-proyect-card>
+      <app-proyect-card [category]="'UI/UX'" [title]="'Color Picker'"
+        [description]="'Color Picker es una aplicación interactiva que permite seleccionar colores de forma visual y mostrar los valores en varios formatos como RGB, HEX y HSL. Es una herramienta útil tanto para diseñadores como desarrolladores.'"
+        [weburl]="'https://franciscomorenosantaella.github.io/color-picker/'"
+        [githuburl]="'https://github.com/FranciscoMorenoSantaella/color-picker'" [tags]="['Angular', 'CSS', 'UI/UX']"
+        [imageSrc]="'assets/c.png'">
+      </app-proyect-card>
+
+      <app-proyect-card [category]="'API'" [title]="'FoodRecipes API'"
+        [description]="'FoodRecipes API es una aplicación backend basada en un CRUD que permite gestionar recetas de comida. He creado y diseñado las tablas de la base de datos para que se ajustaran específicamente al tipo de recetas que quería manejar, permitiendo operaciones de creación, lectura, actualización y eliminación de recetas y sus ingredientes. Implementación con cloudinary para subir las fotos de las recetas y te devuelve automáticamente el url de la imagen'"
+        [githuburl]="'https://github.com/FranciscoMorenoSantaella/FoodRecipesApi'"
+        [tags]="['Spring Boot', 'MariaDB', 'CRUD', 'API REST']" [imageSrc]="'assets/swagger.png'">
+      </app-proyect-card>
+
+      <app-proyect-card [category]="'MOBILE APP'" [title]="'Aurora'"
+      [description]="'Una APP mas enfocada en movil pero que también se puede usar en Web en la que puedes comprar productos de joyeria, como collares, anillos, pulseras etc. Esta APP tiene un menu en el que un moderador puede crear facilmente nuevos productos para vender gracias a la API que diseñe para este proyecto.'"
+      [githuburl]="'https://github.com/FranciscoMorenoSantaella/Aurora_frontend'"
+      [tags]="['Spring Boot', 'APP', 'CRUD', 'Ionic', 'Angular', 'API']" [imageSrc]="'assets/aurora.png'" [imageSrc2]="'assets/aurora2.png'"[imageSrc3]="'assets/aurora3.png'">
+    </app-proyect-card>
+
+      
+      
+
+    </div>
+  </div>
+</section>
+
+<section id="sobremi">
+  <app-about-me></app-about-me>
+</section>
+
+<!--<router-outlet />-->

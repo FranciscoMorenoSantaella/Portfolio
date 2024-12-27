@@ -1,0 +1,26 @@
+<!--Project Card-->
+<div class="row">
+  <!-- Columna para el contenido, ocupa toda la columna en móviles y la mitad en pantallas grandes -->
+  <div class="col-12 col-md-6">
+    <a href="">{{ category }}</a>
+    <h1>{{ title }}</h1>
+    <p style="max-width: 100%;">{{ description }}</p>
+    <a *ngIf="weburl" href="{{weburl}}" target="_blank" role="button" class="btn btn-primary">Ir a la Web</a>
+   <a *ngIf="githuburl" href="{{githuburl}}" target="_blank" role="button" class="btn btn-primary">Ver codigo</a>
+    <!-- Lista de tags -->
+    <div class="tag-list mb-3">
+      <span *ngFor="let tag of tags" class="badge bg-secondary me-1">{{ tag }}</span>
+    </div>
+  </div>
+
+  <!-- Columna para la imagen, ocupa toda la columna en móviles y la mitad en pantallas grandes -->
+  <div *ngIf="category != 'MOBILE APP'" class="col-12 col-md-6 text-center">
+    <img style="max-height: 320px; width: 100%;" [src]="imageSrc" alt="{{ title }}">
+  </div>
+
+  <div *ngIf="category === 'MOBILE APP'" class="col-12 col-md-6 mobile-app-container">
+    <img class="mobile-app" [src]="imageSrc" alt="{{ title }}">
+    <img class="mobile-app" [src]="imageSrc2" alt="{{ title }}">
+    <img class="mobile-app" [src]="imageSrc3" alt="{{ title }}">
+  </div>
+</div>
