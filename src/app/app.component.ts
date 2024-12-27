@@ -8,7 +8,7 @@ import { ExperienceComponent } from './experience/experience.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavbarComponent,HeaderComponent,ProyectCardComponent,AboutMeComponent,ExperienceComponent],
+  imports: [NavbarComponent,HeaderComponent,ProyectCardComponent,AboutMeComponent,ExperienceComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

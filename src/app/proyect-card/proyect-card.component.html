@@ -19,8 +19,14 @@
   </div>
 
   <div *ngIf="category === 'MOBILE APP'" class="col-12 col-md-6 mobile-app-container">
+    <!-- Primera imagen visible en móviles, centrada -->
     <img class="mobile-app" [src]="imageSrc" alt="{{ title }}">
-    <img class="mobile-app" [src]="imageSrc2" alt="{{ title }}">
-    <img class="mobile-app" [src]="imageSrc3" alt="{{ title }}">
+  
+    <!-- Segunda imagen oculta en móviles, visible en pantallas medianas y mayores -->
+    <img class="d-none d-md-block mobile-app" [src]="imageSrc2" alt="{{ title }}">
+  
+    <!-- Tercera imagen oculta en móviles, visible en pantallas medianas y mayores -->
+    <img class="d-none d-md-block mobile-app" [src]="imageSrc3" alt="{{ title }}">
   </div>
+  
 </div>

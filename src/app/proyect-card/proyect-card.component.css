@@ -39,8 +39,9 @@ span {
 
 .mobile-app-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    height: 100%;
   }
   
   .mobile-app {
